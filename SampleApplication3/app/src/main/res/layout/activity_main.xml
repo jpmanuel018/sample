@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edt_box_background"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="70dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/edtFullName"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:inputType="text"
+                        android:digits=" AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzÁáÂâÃãÀàÇçÉéÊêÍíÓóÔôÕõÚú,."
+                        android:hint="Full Name">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edt_box_background"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="70dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/edtEmail"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:hint="Email Address">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edt_box_background"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="70dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/edtContactNo"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:inputType="number"
+                        android:hint="Mobile Number">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edt_box_background"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="70dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/edtBirthday"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:hint="Date of Birth"
+                        android:focusableInTouchMode="false">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edt_box_background"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="70dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/edtAge"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:hint="Age"
+                        android:enabled="false">
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edt_box_background"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="70dp">
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/spGender"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:entries="@array/gender"
+                        android:drawSelectorOnTop="true"
+                        >
+                    </androidx.appcompat.widget.AppCompatSpinner>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_rounded_background"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+</layout>
